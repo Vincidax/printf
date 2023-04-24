@@ -10,4 +10,18 @@
  */
 
 int _printf(const char *format, ...);
+{
+	va_list args;
+	int printed_chars;
 
+	if (format == NULL)
+		return (-1);
+
+	va_starts(args, format);
+
+	printed_chars = _vprintf(format, args);
+
+	ve_end(args);
+
+	return(printed_chars);
+}

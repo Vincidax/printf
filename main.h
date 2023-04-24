@@ -4,7 +4,12 @@
 #include <stdlib.h>
 
 int _printf(const char *format, ...);
-int vprintf(const char *format, va_list args);
+int putchar(int c);
+
+/* Function prototypes for helper functions */
+void print_char(va_list args, int *printed_chars);
+void print_string(va_list args, int *printed_chars);
+void print_percent(int *printed_chars);
 
 
 #endif

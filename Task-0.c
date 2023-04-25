@@ -20,7 +20,6 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			/* Check for specifier character */
 			switch (*format)
 			{
 			case 'c': /* c specifier */
@@ -49,7 +48,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
-
 	va_end(args);
 	return (printed_chars);
 }

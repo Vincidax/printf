@@ -5,7 +5,6 @@
 
 int _printf(const char *format, ...);
 int putchar(int c);
-int num_digits(int num);
 
 /* Function prototypes for helper functions */
 void print_char(va_list args, int *printed_chars);
